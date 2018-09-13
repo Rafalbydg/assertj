@@ -12,4 +12,10 @@ public class Testing {
 	public void stringIsEmpty() throws Exception{
 			assertThat(abc.isEmpty()).isFalse();
 	}
+	
+	@Test
+	public void abcIsEqualtoabc() throws Exception{
+		assertThat(abc).isEqualToIgnoringCase("abc");
+}
+
 }
